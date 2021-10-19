@@ -1,0 +1,111 @@
+/* .show {
+  border: none;
+  font-size: 30px;
+  background: none;
+  padding: 10% 0 0 80%;
+} */
+
+main {
+  padding: 6% 12%;
+}
+
+h3 {
+  font-size: 50px;
+  margin-bottom: auto;
+}
+
+.mainTitle {
+  width: 75%;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.pshadow {
+  width: 50%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+#adress {
+  font-size: 24px;
+}
+
+.programtitle {
+  font-size: 28px;
+  margin: 4% auto 2% auto;;
+}
+
+.underline {
+  width: 4%;
+  margin-bottom: 3%;
+}
+
+.programcards {
+  flex-direction: row;
+  width: 75%;
+}
+
+figure {
+  flex-direction: column;
+  margin: 2px;
+  flex: 1;
+}
+
+.card {
+  text-align: center;
+}
+
+figure > p {
+  text-align: center;
+}
+
+.joinSummit {
+  margin: auto;
+  background: none;
+  text-decoration: underline;
+  font-size: 24px;
+  padding: 5% 0;
+}
+
+.speakConteiner {
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.indvidcont {
+  width: 48%;
+  display: flex;
+  margin: 1%;
+}
+
+.participant {
+  flex: 3;
+}
+
+.partner {
+  color: #919191;
+}
+
+.partnerLogo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.partnerLogo > li {
+  width: 15%;
+  list-style: none;
+  margin: 0 25% 19% 25%;;
+}
+
+.author {
+  flex: 2;
+}

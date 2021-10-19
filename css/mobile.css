@@ -5,9 +5,11 @@ body {
 header {
   display: flex;
   background-color: lightgray;
+  border: 1px dotted rebeccapurple
 }
 
-ul, menu {
+ul,
+menu {
   padding-inline-start: 0;
 }
 
@@ -25,15 +27,19 @@ main {
 
 h3 {
   color: #ec5242;
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
+  margin: 2% auto;
 }
 
 h1 {
   color: #ec5242;
   font-weight: 600;
   font-family: 'Cocogoose', sans-serif;
+  margin: auto;
+  line-height: 46px;
+  font-size: 40px;
 }
 
 .pshadow {
@@ -41,14 +47,21 @@ h1 {
   padding: 3%;
   line-height: 25px;
   font-weight: 300;
+  font-size: large;
 }
 
 h2 {
   font-size: 28px;
+  color: #272a31;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
 
-body > main:nth-child(2) > h4:nth-child(5) {
-  font-weight: 300;
+#adress {
+  font-size: 19px;
+  color: #272a31;
+  font-weight: 400;
+font-family: 'Lato',sans-serif;
 }
 
 .programm {
@@ -78,7 +91,6 @@ body > main:nth-child(2) > h4:nth-child(5) {
 
 figure {
   display: flex;
-  border: 1px solid green;
   margin: 1% 5%;
   background-color: darkslategray;
 }
@@ -124,7 +136,7 @@ section {
   color: unset;
 }
 
-.speakercontainer {
+.speakConteiner {
   width: 95%;
 }
 
@@ -138,9 +150,6 @@ section {
   flex: 1;
   border: 1px dotted black;
   padding: 6% 0 0 6%;
-  align-self: center;
-  /* background-image: url(../images/ches2.png);
-  background-repeat: no-repeat; */
 }
 
 img {
@@ -156,11 +165,11 @@ img {
   justify-content: center;
 }
 
-.position {
-  margin: 1% 0;
+.partName {
+  margin: 0;
 }
 
-.participant > h4 {
+.position {
   margin: 1% 0;
 }
 
@@ -170,8 +179,12 @@ hr {
   margin-inline-start: 1%;
 }
 
+.sponsors {
+  background-color: #272a31;
+}
+
 .partner {
-  color: #272a31;
+  color: #919191;
 }
 
 .partnerLogo {
@@ -185,6 +198,7 @@ hr {
   width: 30%;
   list-style: none;
   margin: 5% 0;
+  color: #919191;
 }
 
 footer {
@@ -203,4 +217,5 @@ footer {
 .author {
   flex: 1;
   margin: auto;
+  padding-right: 6%;
 }
