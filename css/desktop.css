@@ -1,9 +1,66 @@
-/* .show {
-  border: none;
-  font-size: 30px;
+header {
+  flex-direction: column;
+}
+
+.show {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  background: #272a31;
+  padding-right: 5%;
+  margin: 0;
+}
+
+.menulinks {
+  display: flex;
+  justify-content: space-around;
+  margin: 6px 8%;
+  width: 30%;
+  font-family: 'Lato', sans-serif;
+}
+
+header > div > ul > li >a {
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 10%;
+  display: block;
+}
+
+#logo > img {
+  width: 50%;
+}
+
+ul.links {
+  width: 45%;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+#campaign {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  color: #ec5242;
+  box-shadow: 0 0 0 5px #ec5242;
+  margin: 12px;
+  border-radius: inherit;
   background: none;
-  padding: 10% 0 0 80%;
-} */
+  padding: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -11%;
+  border: none;
+}
 
 main {
   padding: 6% 12%;
@@ -25,6 +82,7 @@ h1 {
 
 .pshadow {
   width: 50%;
+  font-weight: 500;
 }
 
 h2 {
@@ -38,7 +96,7 @@ h2 {
 
 .programtitle {
   font-size: 28px;
-  margin: 4% auto 2% auto;;
+  margin: 4% auto 2% auto;
 }
 
 .underline {
@@ -55,13 +113,14 @@ figure {
   flex-direction: column;
   margin: 2px;
   flex: 1;
+  padding: 2% 1%;
 }
 
 .card {
   text-align: center;
 }
 
-figure > p {
+.figtext {
   text-align: center;
 }
 
@@ -74,6 +133,7 @@ figure > p {
 }
 
 .speakConteiner {
+  display: flex;
   width: 80%;
   margin: auto;
   flex-wrap: wrap;
@@ -103,7 +163,7 @@ figure > p {
 .partnerLogo > li {
   width: 15%;
   list-style: none;
-  margin: 0 25% 19% 25%;;
+  margin: 0 25% 19% 25%;
 }
 
 .author {

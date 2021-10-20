@@ -9,62 +9,92 @@
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/desktop.css">
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/lato" rel="stylesheet">
-    <script src="https://use.fontawesome.com/52f1b3ca6a.js"></script>
+    <script src="https://kit.fontawesome.com/00ffbf38b8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-      <menu>
-        <button type="button" class="show menu">
-          <i class="hamb fa fa-bars"></i>
-          <!-- <span class="closeScreen">X</span> -->
-        </button>
-      </menu>
-      <nav></nav>
+      <div class="menu">
+        <ul class="menulinks">
+          <li>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="">Latviski</a>
+          </li>
+          <li>
+            <a href="">My Page</a>
+          </li>
+          <li>
+            <a href="">Logout</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="links">
+        <div class="logo">
+          <a href="" id="logo"><img src="images/Logo.png" alt=""></a>
+        </div>        
+        <ul class="links">
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#sponsors">Partner</a></li>
+          <li><a href="pages/about.html">News</a></li>
+        </ul>
+        <button id="campaign" type="button">CC Campaign</button>
+      </nav>
     </header>
     <!-- MAIN SECTION -->
     <main>
+      <div class="show">
+        <span class=""><i class="fas fa fa-bars"></i></span>
+        <span class="closeScreen">X</span>
+      </div>
       <h3 class="hello">"Hello! Sharing world"</h3>
       <div class="mainTitle">
-        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2021</h1>
+        <h1>XXVIII Scientific and Technological Conference</h1>
       </div>
-      <p class="pshadow">A joyfull celebration believing in the value of openness and sharing, creating a positive change
-        with people from 80 countriesa is taking place in October, in Korea.
+      <p class="pshadow">We invite you to participate in the XXVII Scientific and Technological Conference of Latvian
+        Concrete Association (LCA), which will take place in the International Exhibition
+        Centre RTU-BT1 (Ķīpsalas st. 8, Riga), conference hall.
       </p>
-      <h2>2015.10.15(THU) ~ 16(FRI)</h2>
-      <h4 id="adress">@National Museum of Korea, Art Center Nabi and more</h4>
+      <h2>2021.11.25(THU) ~ 26(FRI)</h2>
+      <h4 id="adress">@Kipsala International Exhibition Centre</h4>
     </main>
     <section class="programm">
           <h4 class="programtitle">Main Program</h4>
           <span class="underline"></span>
       <!-- Should think about should I use cards or some figures -->
-      <div class="programcards">
+      <div id="program" class="programcards">
         <figure>
-          <span class="card span">Icon</span>
+          <span class="card span"><i class="fas fa-igloo"></i></span>
           <h4 class="card title">Lecture</h4>
-          <p>Listen to the speakers from various countries about the messages of sharing and opening</p>
+          <p class="figtext">Actual problems: Innovative metods for ultrasonic control of frost resistant test</p>
         </figure>
         <figure>
-          <span class="card span">Icon</span>
-          <h4 class="card title">CC Exhibition</h4>
-          <p>Listen to the speakers from various countries about the messages of sharing and opening</p>
+          <span class="card span"><i class="fab fa-leanpub"></i></span>
+          <h4 class="card title">Lecture</h4>
+          <p class="figtext">Concrete structural waterproofing and self-healing membrane technology</p>
         </figure>
         <figure>
-          <span class="card span">Icon</span>
-          <h4 class="card title">Forum</h4>
-          <p>Listen to the speakers from various countries about the messages of sharing and opening</p>
+          <span class="card span"><i class="fas fa-chalkboard-teacher"></i></span>
+          <h4 class="card title">Practice</h4>
+          <p class="figtext">Fiberconcrete, vibro-pressed and roller-compacted concrete, inovations</p>
         </figure>
         <figure>
-          <span class="card span">Icon</span>
-          <h4 class="card title">Workshop</h4>
-          <p>Listen to the speakers from various countries about the messages of sharing and opening</p>
+          <span class="card span"><i class="fas fa-compress"></i></span>
+          <h4 class="card title">Olimpic</h4>
+          <p class="figtext">Olympiad competition is the precision of technology to achieve compressive strength</p>
         </figure>
         <figure>
-          <span class="card span">Icon</span>
-          <h4 class="card title">CC Ignite</h4>
-          <p>Listen to the speakers from various countries about the messages of sharing and opening</p>
+          <span class="card span"><i class="fas fa-coffee"></i></span>
+          <h4 class="card title">Chat</h4>
+          <p class="figtext">Coffee break, exhibition, discussions</p>
         </figure>
       </div>
-      <button type="button" class="joinSummit">Join CC Global Summit 2015</button>
+      <button type="button" class="joinSummit">Join Technological Conference</button>
     </section>
     <!-- this section will be build with javascript -->
     <section class="dynamic">
@@ -106,7 +136,7 @@
         </div>
       </div>      
     </section>
-    <section class="sponsors">
+    <section id="sponsors" class="sponsors">
       <h4 class="programtitle partner">Partner</h4>
       <span class="underline"></span>
       <ul class="partnerLogo">
@@ -121,5 +151,6 @@
         <h4 class="programtitle confer">Creative commons korea</h4>     
         <p class="author">2021 Creative commons Korea Some Rights Reserved</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
