@@ -22,7 +22,7 @@ header {
   font-family: 'Lato', sans-serif;
 }
 
-header > div > ul > li >a {
+header > div > ul > li > a {
   color: #fff;
 }
 
