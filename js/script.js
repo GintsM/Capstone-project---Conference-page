@@ -13,7 +13,11 @@ function showMenu() {
 
 hamburger.addEventListener('click', showMenu);
 closeElemetn.addEventListener('click', showMenu);
-menuLinks.forEach((li) => li.addEventListener('click', showMenu));
+menuLinks.forEach((li) => li.addEventListener('click', () => {
+  if(closeElemetn.classList.contains('showClose')) {
+    showMenu();
+  }
+}));
 
 // Featured Speakers
 const speakers = [
@@ -21,43 +25,44 @@ const speakers = [
     name: 'Gints Misins',
     occup: 'SIA Pamati majai, consultant, created own matrix, freelancer',
     img: 'images/portr1.png',
-    description: 'The mechanical and durability properties of UHPC make it an ideal candidate for use in developing new solutions to pressing concerns about highway infrastructure deterioration, repair, and replacement',    
+    description: 'The mechanical and durability properties of UHPC make it an ideal candidate for use in developing new solutions to pressing concerns about highway infrastructure deterioration, repair, and replacement',
   },
   {
     name: 'Migins Simnts',
     occup: 'New York State department of transportation (DOT)',
     img: 'images/portr2.png',
-    description: 'UHPC is a cementitious composite material composed of an optimized gradation of granular constituents The mechanical and durability properties of UHPC make it an ideal candidate for use.',    
+    description: 'UHPC is a cementitious composite material composed of an optimized gradation of granular constituents The mechanical and durability properties of UHPC make it an ideal candidate for use.',
   },
   {
     name: 'Sandra Forshina',
     occup: 'Senior Finansial Analyst  SIA Pamati majai',
     img: 'images/forshina.png',
-    description: 'UHPC is a cementitious composite material composed of an optimized gradation of granular constituents, a water-to-cementitious . Infrastructure deterioration, repair, and replacement',    
+    description: 'UHPC is a cementitious composite material composed of an optimized gradation of granular constituents, a water-to-cementitious . Infrastructure deterioration, repair, and replacement',
   },
   {
     name: 'Sindija Sauliete',
     occup: 'Global market manager, UHPC research',
     img: 'images/f2.png',
-    description: 'UHPC is being considered for use in a wide variety of highway infrastructure applications. The high compressive and tensile strengths',    
+    description: 'UHPC is being considered for use in a wide variety of highway infrastructure applications. The high compressive and tensile strengths',
   },
   {
     name: 'Elizabhete Sofia Kaimina',
     occup: 'Student Jelagava technology college',
     img: 'images/meita.png',
-    description: 'high performance concretes have demonstrated exceptional performance when used as a field-cast closure pour or grout material',    
+    description: 'high performance concretes have demonstrated exceptional performance when used as a field-cast closure pour or grout material',
   },
   {
-    name: 'Gints Misins',
-    occup: 'SIA Pamati majai, consultant, created own matrix, freelancer',
-    img: 'images/portr1.png',
-    description: 'The mechanical and durability properties of UHPC make it an ideal candidate for use in developing new solutions to pressing concerns about highway infrastructure deterioration, repair, and replacement',
-    
-}];
+    name: 'Aku Aakbarkhans',
+    occup: 'SIA Pamati majai, hi Aku just hired you, freelancer',
+    img: 'images/Aku.png',
+    description: 'The mechanical and durability properties of UHPC make it an ideal candidate for use in developing new solutions to pressing concerns about highway infrastructure deterioration, repair, and replacement',    
+  }];
 
 const startPoint = document.querySelector('.dynamic');
 const programTitle = document.createElement('h4');
-programTitle.classList.add('programtitle.speakers');
+programTitle.classList.add('programtitle');
+programTitle.classList.add('speakers');
+programTitle.innerHTML = 'Featured Speakers';
 const underLine = document.createElement('span');
 underLine.classList.add('underline');
 const speakContainer = document.createElement('div');
@@ -66,7 +71,7 @@ startPoint.appendChild(programTitle);
 startPoint.appendChild(underLine);
 startPoint.appendChild(speakContainer);
 
-for (let i = 0; i < speakers.length; i += 1){
+for (let i = 0; i < speakers.length; i += 1) {
   const indvidCont = document.createElement('div');
   indvidCont.classList.add('indvidcont');
   speakContainer.appendChild(indvidCont);

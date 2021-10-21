@@ -217,8 +217,10 @@ section {
 
 .imgparticipant {
   flex: 1;
-  border: 1px dotted black;
-  padding: 6% 0 0 6%;
+  background-image: url(../images/chesmob.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding: 5% 0 0 5%;
 }
 
 img {
@@ -256,17 +258,56 @@ hr {
   color: #919191;
 }
 
+#sponsors > span:nth-child(2) {
+  margin-bottom: auto;
+}
+
 .partnerLogo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  margin-bottom: 6%;
 }
 
 .partnerLogo > li {
   width: 30%;
-  margin: 5% 0;
+  margin: 2% 0;
   color: #919191;
+  text-align: center;
+}
+
+#moz {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+}
+
+#googl {
+  font-size: 29px;
+  font-weight: 200;
+  font-size: 32px;
+  background: -webkit-radial-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#nav {
+  font-family: 'Cocogoose', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#daum {
+  font-size: 24px;
+}
+
+.fa-airbnb {
+  font-size: 36px;
+}
+
+#air {
+  font-family: 'Cocogoose', sans-serif;
+  font-size: 20px;
 }
 
 footer {
@@ -275,15 +316,21 @@ footer {
   align-items: baseline;
 }
 
+.footerLogo {
+  flex: 1;
+  display: flex;
+  padding: 1%;
+}
+
 .confer {
   color: #272a31;
-  padding: 3% 5%;
-  flex: 1;
   margin: auto;
+  font-size: 16px;
 }
 
 .author {
   flex: 1;
   margin: auto;
-  padding-right: 6%;
+  padding-left: 4%;
+  font-size: 16px;
 }

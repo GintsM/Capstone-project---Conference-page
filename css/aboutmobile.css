@@ -4,24 +4,88 @@ body {
 
 header {
   display: flex;
-  background-color: lightgray;
-  border: 2px dotted black;
 }
 
-ul,
-menu {
+.menu {
+  display: none;
+}
+
+ul {
   padding-inline-start: 0;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+ul.links > li > a {
+  color: #272a31;
+}
+
+.open {
+  display: flex;
+  position: fixed;
+  background-image: url(../images/lightblur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  padding: 5% 9%;
+}
+
+.open > li {
+  margin-top: 5%;
+}
+
+.open > li > a {
+  font-size: 30px;
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
 .show {
+  position: fixed;
   border: none;
   font-size: 30px;
   background: none;
-  padding: 10% 0 0 80%;
+  padding: 2% 5%;
+  top: 5px;
+  left: 5px;
 }
 
+.closeScreen {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.showClose {
+  display: block;
+}
+
+#campaign {
+  display: none;
+}
+
+
 main {
-  padding: 1% 5% 20% 5%;
+  padding: 10% 5% 20% 5%;
   background: lightgray;
   display: flex;
   flex-direction: column;
@@ -110,21 +174,28 @@ hr {
 .speakconteiner {
   display: flex;
   flex-direction: column;
-  border: 1px dotted red;
   margin: 6%;
 }
 
 .indvidcont {
   position: relative;
   margin: 3%;
-  border: 1px dotted green;
+}
+
+.curtains {
+  position: absolute;
+  background-color: #ec5242;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.6;
 }
 
 .participant {
   position: absolute;
   width: 60%;
   height: 100px;
-  top: 50%;
+  top: 43%;
   margin-top: -50px;
   left: 50%;
   margin-left: -30%;
@@ -152,8 +223,16 @@ p.position {
   margin: auto;
 }
 
+.sponsors {
+  background-color: #272a31;
+}
+
 .partner {
-  color: #272a31;
+  color: #919191;
+}
+
+.sponsors > span:nth-child(2) {
+  margin-bottom: auto;
 }
 
 .partnerLogo {
@@ -161,12 +240,47 @@ p.position {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  margin-bottom: 6%;
 }
 
 .partnerLogo > li {
   width: 30%;
-  list-style: none;
-  margin: 5% 0;
+  margin: 2% 0;
+  color: #919191;
+  text-align: center;
+}
+
+#moz {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+}
+
+#googl {
+  font-size: 29px;
+  font-weight: 200;
+  font-size: 32px;
+  background: -webkit-radial-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#nav {
+  font-family: 'Cocogoose', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#daum {
+  font-size: 24px;
+}
+
+.fa-airbnb {
+  font-size: 36px;
+}
+
+#air {
+  font-family: 'Cocogoose', sans-serif;
+  font-size: 20px;
 }
 
 footer {
@@ -175,14 +289,21 @@ footer {
   align-items: baseline;
 }
 
+.footerLogo {
+  flex: 1;
+  display: flex;
+  padding: 1%;
+}
+
 .confer {
   color: #272a31;
-  padding: 3% 5%;
-  flex: 1;
   margin: auto;
+  font-size: 16px;
 }
 
 .author {
   flex: 1;
   margin: auto;
+  padding-left: 4%;
+  font-size: 16px;
 }

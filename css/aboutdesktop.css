@@ -1,5 +1,69 @@
+header {
+  flex-direction: column;
+}
+
+.show {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  background: #272a31;
+  padding-right: 5%;
+  margin: 0;
+}
+
+.menulinks {
+  display: flex;
+  justify-content: space-around;
+  margin: 6px 8%;
+  width: 30%;
+  font-family: 'Lato', sans-serif;
+}
+
+header > div > ul > li > a {
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 10%;
+  display: block;
+}
+
+#logo > img {
+  width: 50%;
+}
+
+ul.links {
+  width: 45%;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+#campaign {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  color: #ec5242;
+  box-shadow: 0 0 0 5px #ec5242;
+  margin: 12px;
+  border-radius: inherit;
+  background: none;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -11%;
+  border: none;
+}
+
 main {
-  padding: 11% 20%;
+  padding: 5% 11%;
 }
 
 h3 {
@@ -13,7 +77,8 @@ h3 {
 h1 {
   text-align: center;
   font-size: 45px;
-  line-height: 55px;
+  line-height: 80px;
+  font-size: 70px;
 }
 
 .hideUnderline {
@@ -59,6 +124,10 @@ hr {
   margin: 1%;
 }
 
+.sponsors {
+  display: none;
+}
+
 .partner {
   color: #919191;
 }
@@ -67,15 +136,44 @@ hr {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: auto;
+  align-items: baseline;
+  width: 70%;
+  margin-bottom: 2%;
 }
 
-.partnerLogo > li {
-  width: 15%;
-  margin: 0 25% 19% 25%;
+#moz {
+  font-size: 36px;
+}
+
+#googl {
+  font-size: 29px;
+  font-weight: 200;
+}
+
+#nav {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#daum {
+  font-size: 24px;
+}
+
+#air {
+  font-size: 20px;
+}
+
+.footerLogo > a:nth-child(1) {
+  width: 24%;
+}
+
+.confer {
+  margin: auto;
+  font-size: 22px;
 }
 
 .author {
   flex: 2;
-  margin: auto;
+  text-align: center;
+  font-size: 22px;
 }

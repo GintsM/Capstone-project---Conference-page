@@ -47,6 +47,10 @@ ul.links {
   font-family: 'Lato', sans-serif;
 }
 
+ul.links > li > a {
+  color: #272a31;
+}
+
 #campaign {
   display: block;
   font-family: 'Lato', sans-serif;
@@ -157,15 +161,44 @@ figure {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: auto;
+  align-items: baseline;
+  width: 70%;
+  margin-bottom: 2%;
 }
 
-.partnerLogo > li {
-  width: 15%;
-  list-style: none;
-  margin: 0 25% 19% 25%;
+#moz {
+  font-size: 36px;
+}
+
+#googl {
+  font-size: 29px;
+  font-weight: 200;
+}
+
+#nav {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#daum {
+  font-size: 24px;
+}
+
+#air {
+  font-size: 20px;
+}
+
+.footerLogo > a:nth-child(1) {
+  width: 24%;
+}
+
+.confer {
+  margin: auto;
+  font-size: 22px;
 }
 
 .author {
   flex: 2;
+  text-align: center;
+  font-size: 22px;
 }
