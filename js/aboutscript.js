@@ -14,7 +14,7 @@ function showMenu() {
 hamburger.addEventListener('click', showMenu);
 closeElemetn.addEventListener('click', showMenu);
 menuLinks.forEach((li) => li.addEventListener('click', () => {
-  if(closeElemetn.classList.contains('showClose')) {
+  if (closeElemetn.classList.contains('showClose')) {
     showMenu();
   }
 }));

@@ -2,8 +2,8 @@
 The project is personalized and the topic chosen is Scientific Conference. The project Design followed Cindy Shin's template - mobile and desktop version
     <p align="center">
      <img src="images/home_page.png" alt="" />
-    </p>
-        <p>
+    </p align="center">
+    <p>
      <img src="images/home_page_mobile.png" alt="Form" />
     </p>
 
@@ -45,7 +45,8 @@ Open the index.html file with the browser of your preference.
 
 ## Live Demo
 
-To see the live Demo of the project click [here](https://gintsm.github.io/Capstone-project---Conference-page/)
+To see the live Demo of the project [here](https://gintsm.github.io/Capstone-project---Conference-page/)
+Video presentation [here](https://www.loom.com/share/b943cf18ef094967adcfd08045979dc1)
 
 ## Show your support
 Give a ⭐️ if you like this project!

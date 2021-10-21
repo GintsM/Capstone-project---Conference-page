@@ -14,7 +14,7 @@ function showMenu() {
 hamburger.addEventListener('click', showMenu);
 closeElemetn.addEventListener('click', showMenu);
 menuLinks.forEach((li) => li.addEventListener('click', () => {
-  if(closeElemetn.classList.contains('showClose')) {
+  if (closeElemetn.classList.contains('showClose')) {
     showMenu();
   }
 }));
@@ -55,7 +55,7 @@ const speakers = [
     name: 'Aku Aakbarkhans',
     occup: 'SIA Pamati majai, hi Aku just hired you, freelancer',
     img: 'images/Aku.png',
-    description: 'The mechanical and durability properties of UHPC make it an ideal candidate for use in developing new solutions to pressing concerns about highway infrastructure deterioration, repair, and replacement',    
+    description: 'The mechanical and durability properties of UHPC make it an ideal candidate for use in developing new solutions to pressing concerns about highway infrastructure deterioration, repair, and replacement',
   }];
 
 const startPoint = document.querySelector('.dynamic');

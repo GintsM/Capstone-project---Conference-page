@@ -30,6 +30,13 @@ a {
   display: none;
 }
 
+.open > li > a {
+  font-size: 30px;
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
 ul.links > li > a {
   color: #272a31;
 }
@@ -48,13 +55,6 @@ ul.links > li > a {
 
 .open > li {
   margin-top: 5%;
-}
-
-.open > li > a {
-  font-size: 30px;
-  color: #ec5242;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
 }
 
 .show {
@@ -82,7 +82,6 @@ ul.links > li > a {
 #campaign {
   display: none;
 }
-
 
 main {
   padding: 10% 5% 20% 5%;
@@ -256,7 +255,6 @@ p.position {
 }
 
 #googl {
-  font-size: 29px;
   font-weight: 200;
   font-size: 32px;
   background: -webkit-radial-gradient(#eee, #333);
