@@ -32,10 +32,6 @@ header > div > ul > li > a {
   align-items: center;
 }
 
-.paddr {
-  padding: 0 7%;
-}
-
 .logo {
   width: 10%;
   display: block;
@@ -49,10 +45,6 @@ ul.links {
   width: 45%;
   font-size: 18px;
   font-family: 'Lato', sans-serif;
-}
-
-ul.links > li > a {
-  color: #272a31;
 }
 
 #campaign {
@@ -71,12 +63,11 @@ ul.links > li > a {
 }
 
 main {
-  padding: 6% 12%;
+  padding: 5% 11%;
 }
 
 h3 {
-  font-size: 50px;
-  margin-bottom: auto;
+  display: none;
 }
 
 .mainTitle {
@@ -84,79 +75,56 @@ h3 {
 }
 
 h1 {
-  font-size: 70px;
+  text-align: center;
   line-height: 80px;
+  font-size: 70px;
+}
+
+.hideUnderline {
+  width: 5%;
+  border-bottom: 2px solid #ec5242;
 }
 
 .pshadow {
-  width: 50%;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 36px;
-  font-weight: 800;
-}
-
-#adress {
-  font-size: 24px;
+  padding: 3% 5%;
+  font-size: 18px;
+  margin: 5% auto;
 }
 
 .programtitle {
-  font-size: 28px;
-  margin: 4% auto 2% auto;
+  margin: 3% auto;
 }
 
 .underline {
-  width: 4%;
-  margin-bottom: 3%;
+  width: 5%;
+  border-bottom: 2px solid #ec5242;
+  margin: 0 auto 3%;
 }
 
 .programcards {
+  padding: 0;
+  width: 30%;
+  margin: 4% auto;
+}
+
+hr {
+  margin-top: auto;
+}
+
+.speakconteiner {
   flex-direction: row;
-  width: 75%;
-}
-
-figure {
-  flex-direction: column;
-  margin: 2px;
-  flex: 1;
-  padding: 2% 1%;
-}
-
-.card {
-  text-align: center;
-  font-size: 26px;
-}
-
-.figtext {
-  text-align: center;
-}
-
-.joinSummit {
-  margin: auto;
-  background: none;
-  text-decoration: underline;
-  text-transform: uppercase;
-  font-size: 24px;
-  padding: 5% 0;
-}
-
-.speakConteiner {
-  display: flex;
-  width: 80%;
-  margin: auto;
+  margin: 3% auto;
+  width: 70%;
   flex-wrap: wrap;
 }
 
 .indvidcont {
-  width: 48%;
-  display: flex;
+  width: 47%;
   margin: 1%;
 }
 
-.participant {
-  flex: 3;
+.sponsors {
+  display: none;
 }
 
 .partner {
@@ -194,8 +162,16 @@ figure {
   font-size: 20px;
 }
 
+footer {
+  background-color: #272a31;
+}
+
 .footerLogo > a:nth-child(1) {
   width: 24%;
+}
+
+.invert {
+  filter: invert(1);
 }
 
 .confer {
