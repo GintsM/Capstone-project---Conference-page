@@ -29,9 +29,9 @@ const speakers = [
   },
   {
     name: 'Migins Simnts',
-    occup: 'New York State department of transportation (DOT)',
+    occup: 'Benk New York State department of transportation (DOT)',
     img: 'images/portr2.png',
-    description: 'UHPC is a cementitious composite material composed of an optimized gradation of granular constituents The mechanical and durability properties of UHPC make it an ideal candidate for use.',
+    description: 'A and Benk is test letters - UHPC is a cementitious composite material composed of an optimized gradation of granular constituents The mechanical and durability properties of UHPC make it an ideal candidate for use.',
   },
   {
     name: 'Sandra Forshina',
@@ -90,6 +90,7 @@ for (let i = 0; i < speakers.length; i += 1) {
   nameParticiant.classList.add('partName');
   const position = document.createElement('p');
   position.classList.add('position');
+  position.classList.add('red');
   const italic = document.createElement('i');
   italic.innerHTML = speakers[i].occup;
   position.appendChild(italic);

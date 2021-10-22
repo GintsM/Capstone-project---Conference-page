@@ -60,6 +60,7 @@ a {
   background: none;
   padding: 2% 5%;
   top: 5px;
+  cursor: pointer;
 }
 
 .closeScreen {
@@ -165,6 +166,7 @@ body > section.programm > div > figure > span {
 .card {
   align-self: center;
   padding: 3%;
+  font-family: 'Lato', sans-serif;
 }
 
 .span {
@@ -182,6 +184,7 @@ body > section.programm > div > figure > span {
   color: #fff;
   padding-right: 2%;
   flex: 2;
+  font-family: 'Lato', sans-serif;
 }
 
 .joinSummit {
@@ -242,6 +245,11 @@ img {
 
 .position {
   margin: 1% 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.red {
+  color: #ec5242;
 }
 
 hr {

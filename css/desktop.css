@@ -32,6 +32,10 @@ header > div > ul > li > a {
   align-items: center;
 }
 
+.paddr {
+  padding: 0 7%;
+}
+
 .logo {
   width: 10%;
   display: block;
@@ -122,6 +126,7 @@ figure {
 
 .card {
   text-align: center;
+  font-size: 26px;
 }
 
 .figtext {
@@ -132,6 +137,7 @@ figure {
   margin: auto;
   background: none;
   text-decoration: underline;
+  text-transform: uppercase;
   font-size: 24px;
   padding: 5% 0;
 }

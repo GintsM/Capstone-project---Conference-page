@@ -162,8 +162,16 @@ hr {
   font-size: 20px;
 }
 
+footer {
+  background-color: #272a31;
+}
+
 .footerLogo > a:nth-child(1) {
   width: 24%;
+}
+
+.invert {
+  filter: invert(1);
 }
 
 .confer {
